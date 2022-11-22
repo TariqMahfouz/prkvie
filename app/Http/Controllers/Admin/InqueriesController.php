@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Pipelines\Pipeline;
 use Illuminate\Http\Request;
+use App\Exports\InqueriesExport;
 use App\Http\Controllers\Controller;
+use Maatwebsite\Excel\Facades\Excel;
 use App\Http\Requests\Admin\SettingsRequest;
 use App\Http\Requests\Admin\Settings\UpdateRequest;
 
@@ -27,7 +29,7 @@ class InqueriesController extends Controller
 
     public function export(Request $request)
     {
-        //
+        return Excel::download(new InqueriesExport, 'inqueries.xlsx');
     }
     
     public function destroy($id)
