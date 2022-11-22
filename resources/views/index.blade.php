@@ -8,11 +8,11 @@
     <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('web-assets/css/owl.carousel.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('web-assets/css/magnific-popup.css')}}" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('web-assets/css/style.css')}}" type="text/css">
     <title>Landing Prk Vie</title>
 
 </head>
@@ -25,7 +25,7 @@
             <div class="container pt-2">
                 <div class="wrapper">
                     <div class="left">
-                        <a href="index-v1.html" class="brand"><img height="60px" src="{{ asset('assets/img/logo.png')}}" alt=""></a>
+                        <a href="index-v1.html" class="brand"><img height="60px" src="{{ asset('web-assets/img/logo.png')}}" alt=""></a>
                     </div>
                     <!--end left-->
                     <div class="right">
@@ -177,7 +177,7 @@
             <div class="container aboutUs pt-lg-4">
                 <div class="d-md-flex justify-content-center">
                     <div class="bgYellowContent" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                        <img src="{{ asset('assets/img/bgyellow.png')}}" class="img-fluid">
+                        <img src="{{ asset('web-assets/img/bgyellow.png')}}" class="img-fluid">
                         <div class="content">
                             <h1 class="display-6 fw-bold mb-0">About the project</h1>
                             <h3 class="pe-lg-3 text-black pt-2 text-lg-end fw-bold">Unwind & Restart</h3>
@@ -187,7 +187,7 @@
                         </div>
                     </div>
                     <div class="absoluteImage" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                        <img src="{{ asset('assets/img/about.png')}}" class="img-fluid">
+                        <img src="{{ asset('web-assets/img/about.png')}}" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -196,7 +196,7 @@
         <div class="block bg-white pb-0">
             <div class="container text-center">
                 <h2 class="display-6">Cherry picked location</h2>
-                <img src="{{ asset('assets/img/map.png')}}" class="img-fluid" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" alt="">
+                <img src="{{ asset('web-assets/img/map.png')}}" class="img-fluid" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" alt="">
             </div>
         </div>
         <!-- Gallery -->
@@ -234,7 +234,7 @@
                     <div class="row justify-content-between">
                         <div class="col-lg-4">
                             <h2 class="fw-bold mb-5">More details</h2>
-                            <img src="{{ asset('assets/img/logo_1.png')}}" class="img-fluid">
+                            <img src="{{ asset('web-assets/img/logo_1.png')}}" class="img-fluid">
                         </div>
                         <div class="col-lg-7">
                             <h3 class="fw-bold pt-lg-5">Upwyde Developments</h3>
@@ -257,7 +257,7 @@
                     <div class="row">
                         <div class="col-12"  data-scroll-reveal="enter bottom and move 20px">
                             <h3>Our Location</h3>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.7855216585995!2d{{ $settings['lon'] }}!3d{{ $settings['lat'] }}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145823f76cec181b%3A0x1bd7cdd2d77645cf!2sUpwyde%20Developments!5e0!3m2!1sen!2suk!4v1668694764667!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.7855216585995!2d{{ $settings['lon'] ?? 31.525797 }}!3d{{ $settings['lat'] ?? 30.01431 }}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145823f76cec181b%3A0x1bd7cdd2d77645cf!2sUpwyde%20Developments!5e0!3m2!1sen!2suk!4v1668694764667!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <!--end row-->
@@ -277,7 +277,7 @@
     <footer class="footer">
         <div class="overlay pt-5">
             <div class="container" id="contact">
-                <a href="#" class="brand"><img height="50px" src="{{ asset('assets/img/logo.png')}}" alt=""></a>
+                <a href="#" class="brand"><img height="50px" src="{{ asset('web-assets/img/logo.png')}}" alt=""></a>
                 <h2 class="fw-bold pt-5">Contact.</h2>
                 <!--end brand-->
                 <div class="row">
@@ -291,10 +291,10 @@
                             </div>
                             <div class="col-md-6 social_icons">
                                 <h3>Social</h3>
-                                <h6><a target="_blank" href="{{ $settings['facebook'] }}"><img src="{{ asset('assets/img/face.png')}}">FACEBOOK</a></h6>
-                                <h6><a target="_blank" href="{{ $settings['tiktok'] }}"><img src="{{ asset('assets/img/ticktock.png')}}">TIKTOK</a></h6>
-                                <h6><a target="_blank" href="{{ $settings['instagram'] }}"><img src="{{ asset('assets/img/insta.png')}}">INSTAGRAM</a></h6>
-                                <h6><a target="_blank" href="{{ $settings['youtube'] }}"><img src="{{ asset('assets/img/youtube.png')}}">YOUTUBE</a></h6>
+                                <h6><a target="_blank" href="{{ $settings['facebook'] }}"><img src="{{ asset('web-assets/img/face.png')}}">FACEBOOK</a></h6>
+                                <h6><a target="_blank" href="{{ $settings['tiktok'] }}"><img src="{{ asset('web-assets/img/ticktock.png')}}">TIKTOK</a></h6>
+                                <h6><a target="_blank" href="{{ $settings['instagram'] }}"><img src="{{ asset('web-assets/img/insta.png')}}">INSTAGRAM</a></h6>
+                                <h6><a target="_blank" href="{{ $settings['youtube'] }}"><img src="{{ asset('web-assets/img/youtube.png')}}">YOUTUBE</a></h6>
                             </div>
                         </div>
                     </div>
@@ -323,17 +323,17 @@
 <!--end modal-->
 
 <!--end outer-wrapper-->
-<script type="text/javascript" src="{{ asset('assets/js/jquery-2.2.1.min.js')}}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/jquery-migrate-1.2.1.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('web-assets/js/jquery-2.2.1.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('web-assets/js/jquery-migrate-1.2.1.min.js')}}"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
-<script type="text/javascript" src="{{ asset('assets/js/jquery.validate.min.js')}}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/owl.carousel.min.js')}}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/scrollReveal.min.js')}}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/readmore.min.js')}}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/pace.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('web-assets/js/jquery.validate.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('web-assets/js/owl.carousel.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('web-assets/js/jquery.magnific-popup.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('web-assets/js/scrollReveal.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('web-assets/js/readmore.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('web-assets/js/pace.min.js')}}"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script type="text/javascript" src="{{ asset('assets/js/custom.js')}}"></script>
+<script type="text/javascript" src="{{ asset('web-assets/js/custom.js')}}"></script>
 
 
 </body>
